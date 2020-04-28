@@ -41,7 +41,9 @@
     </q-drawer>
 
     <q-page-container>
+      <keep-alive>
       <router-view />
+      </keep-alive>
     </q-page-container>
   </q-layout>
 </template>
@@ -64,19 +66,19 @@ export default {
           title: 'Cálculo PR ST - PMC',
           caption: '',
           icon: 'local_pharmacy',
-          link: '/'
+          to: '/'
         },
          {
           title: 'Cálculo Generico ST - MVA',
           caption: 'Genéricos',
           icon: 'local_pharmacy',
-          link: '/Genericos'
+          to: '/Genericos'
         },
          {
           title: 'Cálculo Santa Catarina ST - PMC',
           caption: 'Genéricos',
           icon: 'local_pharmacy',
-          link: '/CalculoSc'
+          to: '/CalculoSc'
         }        
       ]
     }
